@@ -166,9 +166,47 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+.card {
+  background-image: url('arc-raiders.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.card {
+  background-image: url('r6.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.card {
+  background-image: url('rocketleague.jpg');
+  background-size: cover;
+  background-position: center;
+}
 
 .card {
   background-image: url('rust.jpg');
   background-size: cover;
   background-position: center;
+}
+.card {
+  position: relative;
+  overflow: hidden;
+  min-height: 200px;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.card h3 {
+  position: relative;
+  z-index: 1;
+  color: white;
+  margin: 0;
+  padding: 10px;
 }
