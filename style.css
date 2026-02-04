@@ -166,6 +166,7 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
 .card {
   background-size: cover;
   background-position: center;
@@ -175,21 +176,10 @@ footer {
   padding: 35px 10px;
   min-height: 200px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-}
-.card {
-  background-size: cover;
-  background-position: center;
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-  background-color: transparent;
-  padding: 35px 10px;
-  min-height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden; /* Ensure the image stays within the card */
+  justify-content: flex-end;
+  overflow: hidden; 
 }
 
 .card:nth-child(1) {
@@ -199,6 +189,7 @@ footer {
 
 .card:nth-child(2) {
   background-image: url('../images/r6.jpg');
+  border-radius: 125px;
 }
 
 .card:nth-child(3) {
